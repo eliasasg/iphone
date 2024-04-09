@@ -1,0 +1,526 @@
+/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> */
+
+/* body{
+    padding-bottom: 1000px;
+    padding-top: 50px;
+   
+    background-color: pink;
+
+    
+} */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+a{
+    color: #0066cc;
+    text-decoration: none;
+    
+}
+p{
+    margin: 0;
+}
+
+.apple-header {
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    /* opacity: 0.8; */
+    top: 0px;
+    left:0px ;
+    backdrop-filter: blur(10px);
+
+
+}
+.apple-icons ul {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin: 0 auto;
+    padding: 14px 0 8px;
+    opacity: .8;
+}
+.apple-header ul li{
+    list-style: none;
+}
+.apple-header .apple-icons ul li a{
+    text-decoration: none;
+    color: #fff;
+    opacity: 1;
+}
+.apple-header .apple-icons ul li{
+    opacity: .8;
+}
+.apple{
+    width: 18px;
+    height: 21px;
+}
+.search{
+    width: 18px;
+    height: 18px;
+}
+.cart{
+    width: 18px ;
+    height: 21px;    
+}
+.apple-header .apple-icons ul li:hover{
+    opacity: 1;
+    
+}
+/* vision */
+.vision{
+    background-image: url(images/hero_apple_vision_pro__e8407ehady6i_large.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height:580px;
+}
+.visionLogo{
+    padding-top:360px
+}
+.learn ul li a:after{
+
+        font-family: "FontAwesome";
+        font-weight: 900;
+        content: "\f105";
+        padding-left: 10px;
+    
+}
+.iphone15-pro{
+    background-image: url(images/hero_iphone15pro__i70z9oz3hj2i_large_2x.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height:692px;
+}
+.iphone15{
+    background-image: url(./images/hero_iphone15_announce_small.jpg);
+    /* background-image: url(../iphone15pro/images/hero_iphone15_announce_small.jpg); */
+    
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height:692px;
+}
+.watch-serious{
+    background-image: url(images/promo_apple_watch_series_9_order__b3u85rm9zf6u_large.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height:580px;
+    /* border-style: dotted; */
+}
+.watch-ultra{
+    background-image: url(images/promo_apple_watch_ultra2_order__dyxqj5ia98om_large.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height:580px;
+    /* border-style: dotted; */
+}
+.macbookpro{
+    background-image: url(images/promo_mbp__ek7p477bkp6q_large.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height:580px;
+    /* border-style: dotted; */
+}
+.fitness{
+    background-image: url(images/promo__sw58lbodkmqq_large.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height:580px;
+    /* border-style: dotted; */
+}
+.applecard{
+    background-image: url(images/iphoneCardlarge.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height:580px;
+    /* border-style: dotted; */
+}
+.tradein{
+    background-image: url(images/promo_iphone_tradein__bugw15ka691e_large.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height:580px;
+    /* border-style: dotted; */
+}
+.grid-container .watcserious-ultra-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+
+
+*{box-sizing: border-box;}
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides{
+    display: none;
+}
+.prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -22px;
+    padding: 16px;
+    color: #f5f5f7;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -22px;
+    padding: 16px;
+    color: #f5f5f7;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+@keyframes fade{
+    from{
+        opacity: .8}to{opacity: 1};
+    }
+    /* automatic slideshow */
+    /* .let slideIndex = 0;
+    showSlides();
+    .function showSlides(){
+        let i;
+        let slides = document.getElementByClassName("mySlides");
+        for (i =0; i < slides.length; i++){
+            slides[i].style.display ="none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length){
+            slideIndex =1}
+            slides[slidIndex-1].style.display = "block";
+            setTimeout(showSlides,2000);
+        
+
+        }
+     */
+
+
+
+
+
+@media(min-width:760px){
+    .watch-serious-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .macbook-fitness-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .applecard-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .iphone15{
+        /* background-image: url(images/hero_iphone15_announce__uuemlcwczn6u_large_2x.jpg); */
+        background-image: url(./images/hero_iphone15_announce__uuemlcwczn6u_largetall_2x.jpg);
+        
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height:692px;
+    }
+}
+
+
+
+
+
+.footer-wrapper {
+    background-color: #f5f5f7;
+    color: #86868b;
+    font-size: 0.7em;
+  }
+  .footer-wrapper ul {
+    list-style: none;
+    padding-bottom: 10px;
+    padding-inline-start: 0px;
+  }
+  .footer-wrapper ul a {
+    color: #515154;
+  }
+  .my-apple-wrapper {
+    padding-bottom: 15px;
+    margin-top: 10px;
+  }
+  .copyright {
+    margin-top: 15px;
+  }
+  .footer-country {
+    margin-top: 8px;
+  }
+  .flag-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+  .footer-country-name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .footer-links-terms ul {
+    display: flex;
+  }
+  .footer-links-terms ul li {
+    padding: 0 10px;
+    border-right: 1px solid #d2d2d7;
+  }
+  .footer-links-terms ul li:first-child {
+    padding-left: 0;
+  }
+  .footer-links-terms ul li:last-child {
+    border-right: 0;
+  }
+  
+  .footer-links-wrapper h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1d1d1f;
+  }
+  .footer-wrapper ul li {
+    padding: 4px 0;
+  }
+  .upper-text-container {
+    border-bottom: 1px solid #d2d2d7;
+    padding: 17px 0 10px;
+    margin-bottom: 20px;
+  }
+  .upper-text-container a {
+    color: #515154;
+  }
+  
+  /*Media Query*/
+  /* Footer */
+  @media (max-width: 768px) {
+    .footer-links-wrapper ul {
+      display: none;
+    }
+    .footer-links-wrapper h3 {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    .footer-links-wrapper h3:after {
+      font-family: "FontAwesome";
+      content: "\f067";
+      padding-left: 10px;
+      position: absolute;
+      right: 25px;
+    }
+  }
+  @media (min-width: 768px) {
+    /*Nav bar*/
+    .nav-item {
+      text-align: center !important;
+      padding: 0;
+      border-bottom: 0px;
+    }
+    /*Footer styling*/
+    .my-apple-wrapper {
+      border-bottom: 1px solid #d2d2d7;
+    }
+  }
+  @media (min-width: 992px) {
+    /*Footer styling*/
+    .copyright {
+      margin-top: 10px;
+    }
+    .footer-country {
+      margin-top: 10px;
+    }
+    .footer-links-terms {
+      margin-top: 10px;
+    }
+  }
+
+
+
+
+  
+  /* slide show */
+  .mySlides{
+    display: none;
+}
+.cursor{
+    cursor: pointer;
+}
+.prev{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -50px;
+    padding: 16px;
+    color: #f5f5f7;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin: -50px;
+    padding: 16px;
+    color: #f5f5f7;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.caption-container{background-color: #222;
+    padding: 2px 16px;
+    text-align: center;
+    color: white;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* .column{
+    float: left;
+    width: 16.66%;
+} */
+.demo{
+    opacity: 0.6;
+}
+.active,
+.demo:hover{
+    opacity: 1;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+} 
+.active, .dot:hover{
+    background-color: #717171;
+} 
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+@keyframes fade{
+    from{
+        opacity: .8}to{opacity: 1};
+    }
+  
+
+
